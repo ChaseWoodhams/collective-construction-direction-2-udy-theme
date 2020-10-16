@@ -39,14 +39,14 @@
   <div class="section-first">
     <div data-w-id="d8e5e5b2-2f8c-f120-e407-45029d64c81c" style="opacity:0" class="post-header">
       <div class="block-post-text">
-        <h1 class="heading-post"></h1>
-        <h6 class="info-data-post"></h6>
+        <h1 class="heading-post">{{ title }}</h1>
+        <h6 class="info-data-post">{{ created-on }}</h6>
       </div>
-      <div class="image-post"></div>
+      <div class="image-post" style="background-image: url({{ main-image }})"></div>
       <div data-w-id="d8e5e5b2-2f8c-f120-e407-45029d64c81e" style="display:block" class="image-color-fill light"></div>
     </div>
     <div class="container-text w-container">
-      <div class="rich-text-block w-richtext"></div>
+      <div class="rich-text-block w-richtext">{{ content }}</div>
     </div>
   </div>
   <div class="footer">
