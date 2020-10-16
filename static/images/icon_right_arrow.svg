@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Group_818" data-name="Group 818" transform="translate(-1528 -2112)">
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="22.5" cy="22.5" r="22.5" transform="translate(1528 2112)" fill="#fff"/>
+    <g id="keyboard-left-arrow-button" transform="translate(1613.942 2141.068) rotate(180)">
+      <g id="chevron-left" transform="translate(58.65)">
+        <path id="Path_2" data-name="Path 2" d="M67.209,1.619,65.59,0,58.65,6.94l6.94,6.94,1.619-1.619L61.889,6.94Z" transform="translate(-58.65)" fill="#131e24"/>
+      </g>
+    </g>
+  </g>
+</svg>
