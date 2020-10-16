@@ -1,13 +1,13 @@
 ---
-title: "Completion of works for November"
-slug: "completion-of-works-for-november"
-collection-id: "5f3bfb271c9b1e88621f2738"
-item-id: "5f3bfb271c9b1e7cc21f2781"
-main-image: "https://uploads-ssl.webflow.com/5f3bfb271c9b1e1f1c1f2755/5f3bfb271c9b1e63f21f274f_news_2.jpg"
-thumbnail-image: "https://uploads-ssl.webflow.com/5f3bfb271c9b1e1f1c1f2755/5f3bfb271c9b1ee1181f2750_news_2_preview.jpg"
-date: "2020-01-21T10:43:52.000Z"
-layout: "single-posts.html"
-tags: "posts"
+main-image: https://uploads-ssl.webflow.com/5f3bfb271c9b1e1f1c1f2755/5f3bfb271c9b1e63f21f274f_news_2.jpg
+collection-id: 5f3bfb271c9b1e88621f2738
+layout: single-posts.html
+slug: completion-of-works-for-november
+date: 2020-10-16T16:07:49.233Z
+item-id: 5f3bfb271c9b1e7cc21f2781
+title: Completion of works for November
+tags: posts
+thumbnail-image: https://uploads-ssl.webflow.com/5f3bfb271c9b1e1f1c1f2755/5f3bfb271c9b1ee1181f2750_news_2_preview.jpg
 ---
 
 Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.  
