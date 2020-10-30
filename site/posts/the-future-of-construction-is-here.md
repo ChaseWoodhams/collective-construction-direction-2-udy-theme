@@ -33,4 +33,6 @@ Most Net Zero projects are based on the overall energy needs annually. So althou
 
 Check back here for future blogs that will discuss the benefits of Net Zero and how Collective Construction is making it our goal to define these revolutionary construction terms here in Georgia and throughout the Southeast.
 
+![](/static/images/uploads/cc-icon02-1-.png)
+
 <!--EndFragment-->
