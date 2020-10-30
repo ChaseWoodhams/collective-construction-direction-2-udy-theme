@@ -36,3 +36,5 @@ Everyone could have their own reason for converting to this type of construction
 This list is only scratching the surface. As we continue to grow, we will be sharing more about why Net Zero is beneficial and how you can obtain it. 
 
 As always, give us a shout if you want to learn more about building a Net Zero home or commercial building. We are here to be your Net Zero guide in Georgia and throughout the southeast.
+
+![](/static/images/uploads/cc-icon02-1-.png)
