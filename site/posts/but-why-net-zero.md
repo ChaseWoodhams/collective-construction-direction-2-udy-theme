@@ -1,11 +1,11 @@
 ---
-title: "**But why Net Zero?**"
+title: But why Net Zero?
 tags: posts
 date: 2020-10-30T17:57:13.754Z
 layout: single-posts.html
 seo:
   twitter:card: summary
-  title: "**But why Net Zero?**"
+  title: But why Net Zero?
   og:image: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
 main-image: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
 thumbnail-image: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
