@@ -17984,6 +17984,20 @@ var KEY_CODES = {
   END: 35
 };
 var FORCE_CLOSE = true;
+/**
+ * This pattern matches links that begin with a `#` AND have some alphanumeric
+ * characters after it, including also hyphens and underscores
+ *
+ * Matches:
+ * #foo
+ * #999
+ * #foo-bar_baz
+ *
+ * Does not match:
+ * #
+ */
+
+var INTERNAL_PAGE_LINK_HASHES_PATTERN = /^#[a-zA-Z0-9\-_]+$/;
 Webflow.define('dropdown', module.exports = function ($, _) {
   var debounce = _.debounce;
   var api = {};
@@ -18088,14 +18102,18 @@ Webflow.define('dropdown', module.exports = function ($, _) {
 
     data.list.attr('id', listId);
     data.list.attr('aria-labelledby', toggleId);
-    /**
-     * In macOS Safari, links don't take focus on click unless they have
-     * a tabindex. Without this, the dropdown will break.
-     * @see https://gist.github.com/cvrebert/68659d0333a578d75372
-     */
-
     data.links.each(function (idx, link) {
-      if (!link.hasAttribute('tabindex')) link.setAttribute('tabindex', '0');
+      /**
+       * In macOS Safari, links don't take focus on click unless they have
+       * a tabindex. Without this, the dropdown will break.
+       * @see https://gist.github.com/cvrebert/68659d0333a578d75372
+       */
+      if (!link.hasAttribute('tabindex')) link.setAttribute('tabindex', '0'); // We want to close the drop down if the href links somewhere internally
+      // to the page
+
+      if (INTERNAL_PAGE_LINK_HASHES_PATTERN.test(link.hash)) {
+        link.addEventListener('click', close.bind(null, data));
+      }
     }); // Remove old events
 
     data.el.off(namespace);
@@ -18124,7 +18142,7 @@ Webflow.define('dropdown', module.exports = function ($, _) {
 
       data.el.on(closeEvent, initialToggler);
       data.el.on(keydownEvent, makeDropdownKeydownHandler(data));
-      data.el.on(focusOutEvent, makeDropdownFousoutHandler(data));
+      data.el.on(focusOutEvent, makeDropdownFocusOutHandler(data));
       data.toggle.on(mouseUpEvent, initialToggler);
       data.toggle.on(keydownEvent, makeToggleKeydownHandler(data));
       data.nav = data.el.closest('.w-nav');
@@ -18435,7 +18453,7 @@ Webflow.define('dropdown', module.exports = function ($, _) {
     };
   }
 
-  function makeDropdownFousoutHandler(data) {
+  function makeDropdownFocusOutHandler(data) {
     return debounce(function (evt) {
       var relatedTarget = evt.relatedTarget,
           target = evt.target;
