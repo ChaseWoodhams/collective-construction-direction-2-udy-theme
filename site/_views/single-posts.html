@@ -46,14 +46,14 @@
   <div class="section-first">
     <div data-w-id="d8e5e5b2-2f8c-f120-e407-45029d64c81c" style="opacity:0" class="post-header">
       <div class="block-post-text">
-        <h1 text="Name" class="heading-post"></h1>
-        <h6 text="Created On" class="info-data-post"></h6>
+        <h1 text="Name" class="heading-post">{{ item.data.name }}</h1>
+        <h6 text="Created On" class="info-data-post">{{ item.data['created-on'] | formatDate: "MMM D, YYYY" }}</h6>
       </div>
-      <div image="Main-Image" class="image-post"></div>
+      <div image="Main-Image" class="image-post" style="background-image: url({{ item.data['main-image'].url }})"></div>
       <div data-w-id="d8e5e5b2-2f8c-f120-e407-45029d64c81e" style="display:block" class="image-color-fill light"></div>
     </div>
     <div class="container-text w-container">
-      <div text="Content" class="rich-text-block w-richtext"></div>
+      <div text="Content" class="rich-text-block w-richtext">{{ item.data.content }}</div>
     </div>
   </div>
   <div class="footer">

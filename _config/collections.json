@@ -1,1 +1,20 @@
-{}
+{
+  "c_b0b5e74b6f1bcadc26d9dd379eede2b8": {
+    "collection": "posts",
+    "query": {
+      "sort": [
+        "-created-on"
+      ],
+      "offset": 0,
+      "limit": 4
+    }
+  },
+  "c_ccf103c3a948088bb484e393ab14d2be": {
+    "collection": "posts",
+    "query": {
+      "sort": [
+        "-created-on"
+      ]
+    }
+  }
+}

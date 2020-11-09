@@ -200,23 +200,23 @@
         <div class="subtitle-line"></div>
       </div>
       <h2 class="title center">Latest News</h2>
-      <div collection="posts" limit="4" class="collection-list-wrapper w-dyn-list">
-        <div role="list" class="collection-list w-dyn-items">
-          <div role="listitem" class="w-dyn-item">
-            <a link="url" href="#" class="link-post-block w-inline-block">
-              <div image="Thumbnail Image" class="img-post"></div>
+      {%- assign collectionId = "main" -%}{%- assign collection = collections["c_b0b5e74b6f1bcadc26d9dd379eede2b8"][collectionId] | limit: 4 -%}<div collection="posts" limit="4" class="collection-list-wrapper w-dyn-list">
+        {%- if collection.length > 0 -%}<div role="list" class="collection-list w-dyn-items">
+          {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+            <a link="url" href="{{ item.url }}" class="link-post-block w-inline-block">
+              <div image="Thumbnail Image" class="img-post" style="background-image: url({{ item.data['thumbnail-image'].url }})"></div>
               <div class="post-info">
-                <div class="info-day-post"></div>
-                <h5 text="Name" class="title-post"></h5>
-                <h6 text="Created On" class="info-data-post"></h6>
+                <div class="info-day-post">{{ item.data['created-on'] | formatDate: "D" }}</div>
+                <h5 text="Name" class="title-post">{{ item.data.name }}</h5>
+                <h6 text="Created On" class="info-data-post">{{ item.data['created-on'] | formatDate: "MMM D, YYYY" }}</h6>
               </div>
               <div class="image-color-fill light"></div>
             </a>
-          </div>
-        </div>
-        <div class="w-dyn-empty">
+          </div>{%- endfor -%}
+        </div>{%- endif -%}
+        {%- unless collection.length > 0 -%}<div class="w-dyn-empty">
           <div>No items found.</div>
-        </div>
+        </div>{%- endunless -%}
       </div>
       <a href="/news/" class="button-default w-button">show all news<br></a>
     </div>
