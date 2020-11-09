@@ -8,8 +8,12 @@ seo:
   twitter:card: summary
   title: How do I get to Net Zero?
   og:image: /static/images/uploads/pexels-pixabay-268362.jpg
-main-image: /static/images/uploads/pexels-pixabay-268362.jpg
-thumbnail-image: /static/images/uploads/pexels-pixabay-268362.jpg
+main-image: 
+  - url: /static/images/uploads/pexels-pixabay-268362.jpg
+    alt:
+thumbnail-image: 
+  - url: /static/images/uploads/pexels-pixabay-268362.jpg
+    alt:
 ---
 If you are past the point of understanding the benefits of Net Zero energy, you’re now asking yourself how do I even get there? 
 
