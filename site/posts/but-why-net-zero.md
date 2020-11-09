@@ -10,10 +10,10 @@ seo:
   og:image: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
 main-image: 
   - url: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
-    alt
+    alt:
 thumbnail-image: 
   - url: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
-    alt
+    alt:
 ---
 A relatively common perception of eco-friendly or innovative construction is that it’s great other people are doing it, but it’s not something one individual or business themselves would even think about considering.
 
