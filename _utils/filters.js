@@ -17,13 +17,13 @@ function escape(s) {
 const slugify = ( text ) => {
   return text
   .toString()
-  .normalize( 'NFD' )                   // split an accented letter in the base letter and the acent
-  .replace( /[\u0300-\u036f]/g, '' )   // remove all previously split accents
   .toLowerCase()
-  .trim()
-  .replace(/\s+/g, '-')
-  .replace(/[^\w\-]+/g, '')
-  .replace(/\-\-+/g, '-'); 
+  .replace(/\s+/g, "-") // Replace spaces with -
+  .replace(/&/g, "-and-") // Replace & with 'and'
+  .replace(/[^\w\-]+/g, "") // Remove all non-word chars
+  .replace(/\--+/g, "-") // Replace multiple - with single -
+  .replace(/^-+/, "") // Trim - from start of text
+  .replace(/-+$/, "") // Trim - from end of text 
 };
 
 const collections = require('../_config/collections.json');
