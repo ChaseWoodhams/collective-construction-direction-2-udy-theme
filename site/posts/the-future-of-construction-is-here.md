@@ -2,6 +2,7 @@
 title: The future of construction is here
 tags: posts
 date: 2020-10-30T15:08:20.257Z
+created-on: "2020-01-21T10:43:52.137Z"
 layout: single-posts.html
 seo:
   twitter:card: summary
@@ -12,8 +13,12 @@ seo:
     there are several key design and functional differences which we will detail
     in a later blog.
   og:image: /static/images/uploads/pexels-kawser-hamid-176342.jpg
-main-image: /static/images/uploads/pexels-kawser-hamid-176342.jpg
-thumbnail-image: /static/images/uploads/pexels-kawser-hamid-176342.jpg
+main-image: 
+  - url: /static/images/uploads/pexels-kawser-hamid-176342.jpg
+    alt: 
+thumbnail-image: 
+  - url: /static/images/uploads/pexels-kawser-hamid-176342.jpg
+    alt: 
 ---
 <!--StartFragment-->
 
