@@ -3,12 +3,17 @@ title: But why Net Zero?
 tags: posts
 date: 2020-10-30T17:57:13.754Z
 layout: single-posts.html
+created-on: "2020-01-21T10:43:52.137Z"
 seo:
   twitter:card: summary
   title: But why Net Zero?
   og:image: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
-main-image: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
-thumbnail-image: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
+main-image: 
+  - url: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
+    alt:
+thumbnail-image: 
+  - url: /static/images/uploads/pexels-rodolfo-clix-1036936.jpg
+    alt:
 ---
 A relatively common perception of eco-friendly or innovative construction is that it’s great other people are doing it, but it’s not something one individual or business themselves would even think about considering.
 
