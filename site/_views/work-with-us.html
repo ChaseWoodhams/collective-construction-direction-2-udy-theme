@@ -1,13 +1,11 @@
-<!doctype html><html data-wf-page="5f3bfb271c9b1e046d1f273a" data-wf-site="5f3bfb263da3fd15ebcca568"><head><style>html{visibility: hidden;opacity:0;}</style>{%- assign item = page | getCurrentPageItem -%}{%- assign pageItem = item -%}
+<!doctype html><html data-wf-page="5fa957fcc1ee5b4fcf4a08f7" data-wf-site="5f3bfb263da3fd15ebcca568"><head><style>html{visibility: hidden;opacity:0;}</style>{%- assign item = page | getCurrentPageItem -%}{%- assign pageItem = item -%}
   <meta charset="utf-8">
   
   
   
   
-  
-  <meta content="" property="twitter:title">
-  <meta content="- Sirius - Webflow HTML website template" property="twitter:description">
-  <meta content="" property="twitter:image">
+  <meta content="Work With Us" property="twitter:title">
+  <meta content="Collective Construction" property="twitter:description">
   
   
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -43,17 +41,23 @@
       </div>
     </div>
   </div>
-  <div class="section-first">
-    <div data-w-id="d8e5e5b2-2f8c-f120-e407-45029d64c81c" style="opacity:0" class="post-header">
-      <div class="block-post-text">
-        <h1 text="Name" class="heading-post">{{ item.data.name }}</h1>
-        <h6 text="Created On" class="info-data-post">{{ item.data['created-on'] | formatDate: "MMM D, YYYY" }}</h6>
+  <div class="section-light-gray">
+    <div class="content-short">
+      <div class="subtitle-block">
+        <div class="subtitle-text">Ask a Question</div>
+        <div class="subtitle-line"></div>
       </div>
-      <div image="Main-Image" class="image-post" style="background-image: url({{ item.data['main-image'].url }})"></div>
-      <div data-w-id="d8e5e5b2-2f8c-f120-e407-45029d64c81e" style="display:block" class="image-color-fill light"></div>
-    </div>
-    <div class="container-text w-container">
-      <div text="Content" class="rich-text-block w-richtext">{{ item.data.content }}</div>
+      <h2 class="title center">Interested In Working With Us?</h2>
+      <p class="paragraph center">We are excited to connect with you and discuss working with you. <br>Please leave us a message below and someone from our team will be in touch soon.</p>
+      <div class="form-block-contact-page w-form">
+        <form id="email-form-2" name="email-form-2" data-name="Email Form 2" action="/#" method="post" data-netlify="true" class="form-request"><input type="text" class="text-field-light w-input" maxlength="256" name="Name-3" data-name="Name 3" placeholder="Your Name" id="Name-3"><input type="email" class="text-field-light w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Your Email" id="Email-2"><textarea placeholder="Please tell us how you are interested in working with Collective Construction." maxlength="5000" id="Message" name="Message" data-name="Message" class="textarea w-node-194da82fa619-cf4a08f7 w-input"></textarea><input type="submit" value="Submit" data-wait="Please wait..." id="w-node-75b6d5f477e1-cf4a08f7" class="submit-button-light w-button"></form>
+        <div class="success-message w-form-done">
+          <div class="text-success light">Thank you! Your submission has been received!</div>
+        </div>
+        <div class="error-message w-form-fail">
+          <div class="text-error">Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer">
