@@ -5,9 +5,9 @@ layout: single-posts.html
 seo:
   twitter:card: summary
 main-image:
-  url: /static/images/pexels-marc-mueller-380768-1-.jpg
+  url: /static/images/pexels-pixabay-268362.jpg
 thumbnail-image:
-  url: /static/images/pexels-marc-mueller-380768-1-.jpg
+  url: /static/images/pexels-pixabay-268362.jpg
 name: How Do I Get To Net Zero
 created-on: 2020-11-10T14:56:14.240Z
 updated-on: 2020-11-10T14:56:14.251Z
