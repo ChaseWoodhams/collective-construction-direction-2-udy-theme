@@ -1956,10 +1956,10 @@ figcaption {
   right: auto;
   bottom: auto;
   display: block;
-  width: 45%;
-  height: 45%;
+  width: auto;
+  height: auto;
   margin-top: 450px;
-  padding: 39px 0px 26px 100px;
+  padding: 40px 100px;
   grid-auto-columns: 1fr;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -1982,7 +1982,7 @@ figcaption {
 }
 
 .dark-paragraphs-hero-3 {
-  max-width: 550px;
+  max-width: 604px;
   margin-top: auto;
   margin-bottom: 0px;
   padding: 0px 10px 0px 0px;
