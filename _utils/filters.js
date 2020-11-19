@@ -79,6 +79,9 @@ module.exports = function (eleventyConfig, ecommerceFormat, priceTemplate) {
                   } else if (field.value == "false") {
                     field.value = false;
                   }
+                  if(field.value.includes('.md') && !field.value.startsWith('site/')) {
+                    field.value = 'site/' + field.value;
+                  }
                   switch (field.operatorName) {
                     case "eq":
                       return value == field.value;
@@ -212,6 +215,9 @@ module.exports = function (eleventyConfig, ecommerceFormat, priceTemplate) {
                   field.value = true;
                 } else if (field.value == "false") {
                   field.value = false;
+                }
+                if(field.value.includes('.md') && !field.value.startsWith('site/')) {
+                  field.value = 'site/' + field.value;
                 }
                 switch (field.operatorName) {
                   case "eq":
@@ -363,7 +369,7 @@ module.exports = function (eleventyConfig, ecommerceFormat, priceTemplate) {
 
       const shippable = !!product.data['shippable'];
 
-      const productSlug = `product/${product.data.slug}.md`;
+      const productSlug = `site/product/${product.data.slug}.md`;
       const variations = skus.filter(sku =>
         sku.data.product == productSlug
       ).map(sku => {
@@ -420,15 +426,17 @@ module.exports = function (eleventyConfig, ecommerceFormat, priceTemplate) {
 
   eleventyConfig.addLiquidFilter('resolveReference', function (item, field, fieldType) {
 
-    const itemField = item.data[field]
+    let itemField = item.data[field]
     let ref = {};
     if (itemField) {
 
       if (typeof itemField == "string") {
-
-        let refSlug = itemField.includes('.md') ? itemField.split('/')[1].replace('.md', '') : itemField;
+        if (!itemField.startsWith('site/')) {
+          itemField = 'site/' + itemField;
+        }
+        let refSlug = itemField.includes('.md') ? itemField.split('/')[2].replace('.md', '') : itemField;
         if (!fieldType) {
-          itemField.split('/')[0]
+          fieldType = itemField.split('/')[1];
         }
 
         ref = findBySlug(fieldType, refSlug);
@@ -449,9 +457,12 @@ module.exports = function (eleventyConfig, ecommerceFormat, priceTemplate) {
     if (itemField && Array.isArray(itemField)) {
 
       ref = itemField.map(e => {
-        let refSlug = e.includes('.md') ? e.split('/')[1].replace('.md', '') : e;
+        if (!e.startsWith('site/')) {
+          e = 'site/' + e;
+        }
+        let refSlug = e.includes('.md') ? e.split('/')[2].replace('.md', '') : e;
         if (!fieldType) {
-          e.split('/')[0]
+          fieldType = e.split('/')[1];
         }
         findBySlug(fieldType, refSlug);
       });

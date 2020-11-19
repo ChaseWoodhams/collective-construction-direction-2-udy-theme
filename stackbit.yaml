@@ -6,7 +6,7 @@ staticDir: "static"
 uploadDir: "images"
 pagesDir: "site"
 metadata:
-  title: "collective construction direction 2 "
+  title: " collective construction direction 2"
   description: "Theme created in Webflow and converted with Udesly"
 models:
   posts:

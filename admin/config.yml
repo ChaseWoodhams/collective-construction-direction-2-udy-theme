@@ -8,7 +8,8 @@ collections:
   - name: "pages"
     label: "Pages"
     folder: "site/pages"
-    identifier_field: "name"
+    identifier_field: "title"
+    extension: "md"
     create: false
     delete: false
     slug: "{{slug}}"
@@ -67,6 +68,7 @@ collections:
     folder: "site/posts"
     create: true
     identifier_field: "name"
+    extension: "md"
     slug: "{{slug}}"
     editor:
       preview: false
